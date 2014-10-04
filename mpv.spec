@@ -1,17 +1,18 @@
 Summary:	Video player based on MPlayer/mplayer2
 Name:		mpv
-Version:	0.5.0
+Version:	0.6.0
 Release:	1
 License:	GPL v2
 Group:		X1//Applications/Multimedia
 Source0:	https://github.com/mpv-player/mpv/archive/v%{version}.tar.gz
-# Source0-md5:	85e4895dfdce888fb436e7c217958b8b
+# Source0-md5:	ac06561522ac1767cd05987ea85e827c
 Source1:	https://waf.googlecode.com/files/waf-1.7.15
 # Source1-md5:	2ba0e10baf44db334e3baa39e59688db
 URL:		http://mpv.io/
 BuildRequires:	OpenGL-devel
 BuildRequires:	alsa-lib-devel
 BuildRequires:	curl-devel
+BuildRequires:	docutils
 BuildRequires:	enca-devel
 BuildRequires:	ffmpeg-devel
 BuildRequires:	jack-audio-connection-kit-devel
