@@ -1,13 +1,13 @@
 Summary:	Video player based on MPlayer/mplayer2
 Name:		mpv
-Version:	0.6.1
-Release:	2
+Version:	0.7.1
+Release:	1
 License:	GPL v2
 Group:		X1//Applications/Multimedia
 Source0:	https://github.com/mpv-player/mpv/archive/v%{version}.tar.gz
-# Source0-md5:	a6060358a47a5a7cfc1123b8f74dd5ab
-Source1:	https://waf.googlecode.com/files/waf-1.7.15
-# Source1-md5:	2ba0e10baf44db334e3baa39e59688db
+# Source0-md5:	8112478d360135b2c78ea08dac3b9b22
+Source1:	http://ftp.waf.io/pub/release/waf-1.8.1
+# Source1-md5:	813926f279ed6f09b04b3048e27914ac
 URL:		http://mpv.io/
 BuildRequires:	Mesa-libGL-devel
 BuildRequires:	Mesa-libwayland-EGL-devel
@@ -40,6 +40,7 @@ BuildRequires:	xorg-libXinerama-devel
 BuildRequires:	xorg-libXrandr-devel
 BuildRequires:	xorg-libXv-devel
 BuildRequires:	zlib-devel
+%requires_eq	ffmpeg-libs
 Requires(post,postun):	/usr/bin/gtk-update-icon-cache
 Requires(post,postun):	desktop-file-utils
 Requires(post,postun):	hicolor-icon-theme
@@ -75,7 +76,6 @@ export LDFLAGS="%{rpmldflags}"
 	--confdir=%{_sysconfdir}/mpv	\
 	--prefix=%{_prefix} \
 	--libdir=%{_libdir} \
-	--nocache	    \
 	--enable-cdda	    \
 	--enable-zsh-comp
 ./waf -v build
