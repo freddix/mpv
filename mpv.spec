@@ -1,7 +1,7 @@
 Summary:	Video player based on MPlayer/mplayer2
 Name:		mpv
 Version:	0.7.1
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X1//Applications/Multimedia
 Source0:	https://github.com/mpv-player/mpv/archive/v%{version}.tar.gz
@@ -30,7 +30,7 @@ BuildRequires:	libxkbcommon-devel
 BuildRequires:	lua-devel
 BuildRequires:	mpg123-libs-devel
 BuildRequires:	pkg-config
-BuildRequires:	pulseaudio-devel
+#BuildRequires:	pulseaudio-devel
 BuildRequires:	v4l-utils-devel
 BuildRequires:	wayland-devel
 BuildRequires:	xorg-libX11-devel
