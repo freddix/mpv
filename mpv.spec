@@ -1,13 +1,13 @@
 Summary:	Video player based on MPlayer/mplayer2
 Name:		mpv
-Version:	0.7.3
-Release:	1
+Version:	0.8.2
+Release:	3
 License:	GPL v2
 Group:		X1//Applications/Multimedia
 Source0:	https://github.com/mpv-player/mpv/archive/v%{version}.tar.gz
-# Source0-md5:	894e712235574fb78077e388f10c1cdd
-Source1:	http://ftp.waf.io/pub/release/waf-1.8.1
-# Source1-md5:	813926f279ed6f09b04b3048e27914ac
+# Source0-md5:	6437a04dbcfe42efc13cdd37c979b954
+Source1:	http://ftp.waf.io/pub/release/waf-1.8.7
+# Source1-md5:	190ebc5141720b72c533aa015bd19a76
 URL:		http://mpv.io/
 BuildRequires:	Mesa-libGL-devel
 BuildRequires:	Mesa-libwayland-EGL-devel
