@@ -1,11 +1,11 @@
 Summary:	Video player based on MPlayer/mplayer2
 Name:		mpv
-Version:	0.8.2
-Release:	4
+Version:	0.8.3
+Release:	1
 License:	GPL v2
 Group:		X1//Applications/Multimedia
 Source0:	https://github.com/mpv-player/mpv/archive/v%{version}.tar.gz
-# Source0-md5:	6437a04dbcfe42efc13cdd37c979b954
+# Source0-md5:	a34ff41da1d5393ac8d6f9fbb743d3bd
 Source1:	http://ftp.waf.io/pub/release/waf-1.8.7
 # Source1-md5:	190ebc5141720b72c533aa015bd19a76
 URL:		http://mpv.io/
